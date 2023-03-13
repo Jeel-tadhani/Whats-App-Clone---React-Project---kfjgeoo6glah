@@ -119,7 +119,7 @@ const Conversation = () => {
                         <EmojiPicker onEmojiClick={(emoji)=>{onEmojiClick(emoji)}} height='350px' lazyLoadEmojis={true} skinTonesDisabled={true} searchDisabled={true}/>
                     </EmojiContainer>:null}
                     <EmojiImage src='https://cdn-icons-png.flaticon.com/128/876/876781.png' onClick={()=>setEmojiVisi(!emojiVisi)}/>
-                    <SearchInput ref={inputElement} onKeyDown={handleKeyDown} placeholder='Type a Massage' value={text} onChange={(e)=>setText(e.target.value)}/>
+                    <SearchInput ref={inputElement} onKeyDown={handleKeyDown} placeholder='Type a Message' value={text} onChange={(e)=>setText(e.target.value)}/>
                 </SearchContainer>
             </Chatbox>
         </Container>
